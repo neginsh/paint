@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #a5a5a5;
+    font-family: 'Raleway' , 'Open Sans', sans-serif;
+}
+button{    font-family: 'Raleway' , 'Open Sans', sans-serif;
+}
+canvas{
+    width: 700px;
+    height: 400px;
+    margin: 30px auto;
+    display: table;
+    border: 2px solid #00000075;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.controls ul{
+    margin: 0 auto;
+    width: max-content;
+    width: -moz-max-content;
+    height: 50px;
+}
+.controls ul li{
+    width: 50px;
+    margin: 0 10px;
+    list-style: none;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+    border:  6px solid transparent;
+    -webkit-transition:.3s ease-in border-color;
+    -moz-transition:.3s ease-in border-color;
+    -ms-transition:.3s ease-in border-color;
+    -o-transition:.3s ease-in border-color;
+    transition:.3s ease-in border-color;
+}
+.controls ul li.selected{
+    border-color: #00000075;
+    -webkit-transition:.3s ease-in border-color;
+    -moz-transition:.3s ease-in border-color;
+    -ms-transition:.3s ease-in border-color;
+    -o-transition:.3s ease-in border-color;
+    transition:.3s ease-in border-color;
+}
+.controls ul li.red{
+    background-color: red;
+}
+.controls ul li.blue{
+    background-color: blue;
+}
+.controls ul li.green{
+    background-color: green;
+}
+.controls button#colorSelectOpen{
+    width: 120px;
+    height: 40px;
+    margin: 20px auto;
+    display: table;
+    background-color: #692275;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+.controls #colorSelect{
+    display: none;
+    width: 300px;
+    position: relative;
+    height: 135px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: left;
+    border-radius: 5px;
+}
+.controls #colorSelect::after{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: -10px;
+    right: 50%;
+    position: absolute;
+    content: '';
+    border-bottom: 10px solid white;
+}
+.controls #colorSelect span#newColor{
+    width: 24%;
+    height: 75px;
+    background-color: black;
+    float: left;
+    margin: 3%;
+}
+.controls #colorSelect .slider{
+    padding: 10px;
+}
+.controls #colorSelect .slider p label{
+    width: 50px;
+    display: inline-block;
+}
+.controls #colorSelect #addColor{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    display: table;
+    background-color: #692275;
+    color: white;
+    border: 0;
+    border-radius: 0 0 5px 5px;
+}

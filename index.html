@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple drawing Application - test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+</head>
+<body>
+
+    <canvas width="700" height="400"></canvas>
+    <div class="controls">
+        <ul>
+            <li class="red"></li>
+            <li class="blue selected"></li>
+            <li class="green"></li>
+        </ul>
+        <button id="colorSelectOpen">Add Color</button>
+        <div id="colorSelect">
+            <span id="newColor"></span>
+            <div class="slider">
+                <p>
+                    <label for="red">Red:</label>
+                    <input name="red" id="red" min="0" max="255" value="0" type="range">
+                </p>
+                <p>
+                    <label for="green">Green:</label>
+                    <input name="green" id="green" min="0" max="255" value="0" type="range">
+                </p>
+                <p>
+                    <label for="blue">Blue:</label>
+                    <input name="blue" id="blue" min="0" max="255" value="0" type="range">
+                </p>
+            </div>
+            <button id="addColor">Add Color</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
